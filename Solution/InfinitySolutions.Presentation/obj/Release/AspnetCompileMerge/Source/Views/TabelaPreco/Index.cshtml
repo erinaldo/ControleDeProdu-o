@@ -1,0 +1,106 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.TabelaPrecoModel
+@{
+    ViewBag.Title = "Tabela Preço";
+    ViewBag.Imagem = "~/Content/imagens/TabelaPreco.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="jumbotron">
+            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">DESCRIÇÃO</th>
+                        <th scope="col">IMPOSTO (%)</th>
+                        <th scope="col">LUCRO (%)</th>
+                        <th scope="col">AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @if (Model.Retorno.Entity != null)
+                    {
+                        foreach (var tabelaPreco in (List<TabelaPreco>)Model.Retorno.Entity)
+                        {
+                            <tr>
+                                <td scope="col">@tabelaPreco.Descricao</td>
+                                <td scope="col">@tabelaPreco.Imposto% </td>
+                                <td scope="col">@tabelaPreco.Lucro% </td>
+                                <td scope="col">
+                                    <img id="@tabelaPreco.Codigo" src="~/Content/imagens/EditarMenor.png" alt="ALTERAR TABELA PREÇO" title="ALTERAR TABELA PREÇO" class="js-AlterarTabelaPreco" />
+                                    <img id="@tabelaPreco.Codigo" src="~/Content/imagens/ExcluirMenor.png" alt="EXCLUIR TABELA PREÇO" title="EXCLUIR TABELA PREÇO" class="js-ExcluirTabelaPreco" />
+                                </td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ADICIONAR))
+{
+    <a data-toggle="modal" data-target="#modalIncluirMateriaPrima">
+        Adicionar Tabela Preço
+    </a>
+}
+
+@using (Html.BeginForm("Salvar", "TabelaPreco", FormMethod.Post, new { @class = "form-horizontal", id = "formIncluirTabelaPreco" }))
+{
+
+    @Html.HiddenFor(model => model.TabelaPreco.Codigo, new { id = "hdnTabelaPrecoCodigo" })
+
+    <div class="modal fade" id="modalIncluirMateriaPrima" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">TABELA PREÇO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem invisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label><span class="fonte-vermelha control-label">* </span>Descrição</label>
+                                    @Html.TextBoxFor(m => m.TabelaPreco.Descricao, new { id = "txtTabelaPrecoDescricao", @class = "form-control js-obrigatorio", maxLength = 150 })
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label><span class="fonte-vermelha control-label">* </span>Imposto (%)</label>
+                                    @Html.TextBoxFor(m => m.TabelaPreco.Imposto, new { id = "txtTabelaPrecoImposto", @class = "form-control js-porcentagem js-obrigatorio", maxLenght = 5 })
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label><span class="fonte-vermelha control-label">* </span>Lucro (%)</label>
+                                    @Html.TextBoxFor(m => m.TabelaPreco.Lucro, new { id = "txtTabelaPrecoLucro", @class = "form-control js-porcentagem js-obrigatorio", maxLenght = 5 })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarTabelaPreco" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/Scripts/TabelaPreco/index.js"></script>

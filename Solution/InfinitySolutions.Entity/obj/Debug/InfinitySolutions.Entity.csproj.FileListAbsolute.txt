@@ -1,0 +1,40 @@
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csprojAssemblyReference.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csproj.CoreCompileInputs.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csprojAssemblyReference.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\bin\Debug\InfinitySolutions.Entity.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csprojAssemblyReference.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.csproj.CoreCompileInputs.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Entity\obj\Debug\InfinitySolutions.Entity.pdb

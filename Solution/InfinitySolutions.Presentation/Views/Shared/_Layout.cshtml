@@ -1,0 +1,157 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@{
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - .::Controle Produção::.</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <link rel="shortcut icon" href="~/favicon.ico">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var rootUrl = "@Url.Content("~")"
+    </script>
+    <div class="navbar navbar-inverse navbar-fixed-top js-not-imprimir">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href='@Url.Action("Index", "Home")'>
+                    <img src='@Url.Content("~/Content/imagens/logoVestiry.png")' class="navbar-brand-img" />
+                </a>
+
+            </div>
+            @if (login != null)
+            {
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav js-itens-menu">
+                        <li class="dropdown">
+                            <a href='@Url.Action("Index", "Produto")' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produção <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.PEDIDO))
+                                {
+                                    <li> <a class="nav-link" href='@Url.Action("Index", "Pedido")'>Pedido</a></li>
+                                }
+                                <li role="separator" class="divider"></li>
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.CLIENTE))
+                                {
+                                    <li><a class="nav-link" href='@Url.Action("Index", "Cliente")'>Cliente</a></li>
+                                }
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.PRODUTO))
+                                {
+                                    <li><a class="nav-link" href='@Url.Action("Index", "Produto")'>Produto</a></li>
+                                }
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.MATERIA_PRIMA))
+                                {
+                                    <li><a class="nav-link" href='@Url.Action("Index", "MateriaPrima")'>Matéria Prima</a></li>
+                                }
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.TABELA_PRECO))
+                                {
+                                    <li><a class="nav-link" href='@Url.Action("Index", "TabelaPreco")'>Tabela Preço</a></li>
+                                }
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.FUNCIONARIO))
+                                {
+                                    <li><a class="nav-link" href='@Url.Action("Index", "Funcionario")'>Funcionário</a></li>
+                                }
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.TERCEIRIZADO))
+                                {
+                                    <li><a class="nav-link" href='@Url.Action("Index", "Terceirizado")'>Terceirizado</a></li>
+                                }
+                                @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.TERCEIRIZADO))
+                                {
+                                    <li><a class="nav-link" href='@Url.Action("Index", "LinhaDeProducao")'>Linha de Produção</a></li>
+                                }
+                            </ul>
+                        </li>
+                        @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.FINANCEIRO))
+                        {
+                            <li class="dropdown">
+                                <a href='@Url.Action("Index", "Financeiro")' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Financeiro <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.CONTA_RECEBER))
+                                    {
+                                        <li> <a class="nav-link" href='@Url.Action("Index", "ContasReceber")'>Contas Receber</a></li>
+                                    }
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.CONTA_PAGAR))
+                                    {
+                                        <li><a class="nav-link" href='@Url.Action("Index", "ContasPagar")'>Contas Pagar</a></li>
+                                    }
+                                    <li role="separator" class="divider"></li>
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.NOTAS_FISCAIS))
+                                    {
+                                        <li><a class="nav-link" href='@Url.Action("Index", "NotasFiscais")'>Notas Fiscais</a></li>
+                                    }
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.FORNECEDOR))
+                                    {
+                                        <li><a class="nav-link" href='@Url.Action("Index", "Fornecedores")'>Fornecedores</a></li>
+                                    }
+
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                    <ul class="nav navbar-nav js-itens-menu alinhar-direita">
+                        <li> <a class="nav-link" href='@Url.Action("Sair", "Home")'>Sair</a></li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            }
+        </div>
+    </div>
+    <div class="container body-content">
+        @if (login != null)
+        {
+            <div class="alinhar-direita js-not-imprimir">
+                <h5 class="titulo saudacao-usuario">Bem Vindo(a) @login.Nome (@login.TiposFuncoes.FirstOrDefault().Descricao)</h5>
+            </div>
+        }
+        <div class="titulo js-not-imprimir">
+            <h2 class="titulo">@ViewBag.Title</h2><img class="imagem-titulo" src=@Url.Content(ViewBag.Imagem) />
+        </div>
+        @RenderBody()
+        <footer class="rodape js-not-imprimir">
+            <hr />
+            <i> By Inifinity Solutions Systens</i>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery-ui.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/Home/index.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/i18n/defaults-pt_BR.min.js"></script>
+
+    <script src="~/Scripts/jquery-editable-select.min.js"></script>
+    <link href="~/Content/jquery-editable-select.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery.mask.min.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+    <script src="~/Scripts/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="~/Scripts/jScript.js"></script>
+
+    <script src="~/Scripts/Highcharts-4.0.1/js/highcharts.js"></script>
+    <script src="~/Scripts/jquery.MultiFile.js"></script>
+
+</body>
+</html>

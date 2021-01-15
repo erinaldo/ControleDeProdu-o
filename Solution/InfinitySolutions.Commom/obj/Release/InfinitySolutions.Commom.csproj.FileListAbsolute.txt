@@ -1,0 +1,45 @@
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csprojAssemblyReference.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CoreCompileInputs.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CopyComplete
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Commom.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\bin\Release\InfinitySolutions.Entity.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csprojAssemblyReference.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CoreCompileInputs.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.csproj.CopyComplete
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Commom\obj\Release\InfinitySolutions.Commom.pdb

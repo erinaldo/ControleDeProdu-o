@@ -1,0 +1,391 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.font-vermelha {
+    color: red;
+}
+
+.alinhar-esquerda {
+    float: left;
+}
+
+.alinhar-direita {
+    float: right !important;
+}
+
+.margin-left-10porc {
+    margin-left: 10%;
+}
+
+.padding-0px {
+    padding: 0px !important;
+}
+
+.margin-0px {
+    margin: 0px !important;
+}
+
+.input-validation-error {
+    border-color: red;
+}
+
+.fonte-vermelha {
+    color: rgb(169, 68, 66) !important;
+}
+
+.conteudo {
+    width: 50%;
+    height: 300px;
+    overflow: auto;
+    margin-left: 25%;
+}
+
+.conteudo-devedores {
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+
+.label-blank {
+    padding-top: 2.3em;
+}
+
+.jumbotron {
+    padding: 15px !important;
+}
+
+.day:hover,
+.day:focus {
+    background-color: #265a88;
+    background-position: 0 -15px;
+    color: #ffffff;
+}
+
+.tabela-historico tr:hover,
+.tabela-historico tr:focus {
+    background-color: #265a88 !important;
+    background-position: 0 -15px;
+    color: #ffffff;
+}
+
+.tabela-historico > thead > tr > th,
+.tabela-historico > tbody > tr > th,
+.tabela-historico > tfoot > tr > th,
+.tabela-historico > thead > tr > td, .table > tbody > tr > td,
+.tabela-historico > tfoot > tr > td {
+    padding: 2px !important;
+}
+
+.tr-selecionado {
+    background-color: #265a88 !important;
+    background-position: 0 -15px;
+    color: #ffffff;
+}
+
+.width-55px {
+    width: 55px !important;
+}
+
+.width-155px {
+    width: 155px !important;
+}
+
+.margin-left-25pc {
+    margin-left: 25% !important;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1,
+.col-lg-1, .col-xs-2, .col-sm-2,
+.col-md-2, .col-lg-2, .col-xs-3,
+.col-sm-3, .col-md-3, .col-lg-3,
+.col-xs-4, .col-sm-4, .col-md-4,
+.col-lg-4, .col-xs-5, .col-sm-5,
+.col-md-5, .col-lg-5, .col-xs-6,
+.col-sm-6, .col-md-6, .col-lg-6,
+.col-xs-7, .col-sm-7, .col-md-7,
+.col-lg-7, .col-xs-8, .col-sm-8,
+.col-md-8, .col-lg-8, .col-xs-9,
+.col-sm-9, .col-md-9, .col-lg-9,
+.col-xs-10, .col-sm-10, .col-md-10,
+.col-lg-10, .col-xs-11, .col-sm-11,
+.col-md-11, .col-lg-11, .col-xs-12,
+.col-sm-12, .col-md-12, .col-lg-12 {
+    padding: 4px !important;
+}
+
+.width-100pc {
+    width: 100% !important;
+}
+
+
+
+
+/**/
+
+.rodape i {
+    color: #cec7c7 !important;
+}
+
+input[type=text], textarea {
+    text-transform: uppercase;
+}
+
+.campoComErro input[type=text], .campoComErro select, .campoComErro input[type=password], .campoComErro textarea {
+    border-color: rgb(169, 68, 66) !important;
+    background-color: rgb(242, 222, 222) !important;
+}
+
+.campoComErro label {
+    color: rgb(169, 68, 66) !important;
+}
+
+.invisivel {
+    display: none;
+}
+
+.navbar-brand-img {
+    float: left;
+    height: 60px;
+    padding: 5px 5px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.imagem-titulo {
+    height: 60px;
+}
+
+.titulo {
+    float: left;
+    margin-top: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.table td img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+th {
+    text-align: center !important; /* alinhamento horizontal */
+    vertical-align: middle; /* alinhamento vertical */
+}
+
+td {
+    text-align: center; /* alinhamento horizontal */
+    vertical-align: middle; /* alinhamento vertical */
+}
+
+.modal-xl {
+    width: 1100px !important;
+}
+
+.img-ficha-tecnica-pedido {
+    width: 250px;
+    height: 250px;
+}
+
+.saudacao-usuario {
+    color: #cec7c7 !important;
+    font-style: italic;
+}
+
+.produto-quantidade-produzida {
+    width: 50px !important;
+    margin-left: 25% !important;
+}
+
+.btn-custom {
+    padding: 1px 15px 3px 2px;
+    border-radius: 50px;
+}
+
+.btn-icon {
+    padding: 8px;
+    background: #ffffff;
+}
+
+.ficha-tecnica input[type=text] {
+    display: inline-block;
+    width: 100%;
+    height: 28px;
+    max-width: 100%;
+}
+
+.ficha-tecnica-tabela-impressao {
+    width: 100% !important;
+    margin-left: 0% !important;
+}
+
+.ficha-tecnica-tabela {
+    border: 1px solid black;
+    background-color: white !important;
+    width: 75%;
+    margin-left: 12%;
+}
+
+    .ficha-tecnica-tabela td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+        .ficha-tecnica-tabela td span {
+            font-weight: bolder;
+        }
+
+.td-sem-borda {
+    border: 0px solid black;
+}
+
+.tr-sem-borda {
+    border: 0px solid black;
+}
+
+
+.imagem-logo-ficha-tecnica {
+    width: 150px;
+}
+
+.campos-ficha-tecnica {
+    text-align: left;
+}
+
+.fonte-titulo-ficha-tecnica {
+    color: rgb(85,40,130);
+    font-weight: bolder;
+}
+
+.fonte-rodape-ficha-tecnica {
+    color: rgb(85,40,130);
+    font-weight: bolder;
+}
+
+.td-logo-ficha-tecnica {
+    width: 150px;
+}
+
+.modal {
+    overflow-y: auto !important;
+}
+
+.tabela-impressao-cabecalho {
+    width: 100%;
+}
+
+.td-impressao-descricao-numero-pedido {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.tabela-impressao-descricao-cliente {
+    width: 100%;
+}
+
+    .tabela-impressao-descricao-cliente td {
+        text-align: left; /* alinhamento horizontal */
+        padding: 2.5px;
+    }
+
+        .tabela-impressao-descricao-cliente td span {
+            font-weight: bolder;
+        }
+
+.tabela-impressao-descricao-produtos {
+    width: 100%;
+}
+
+    .tabela-impressao-descricao-produtos td {
+        padding: 5px;
+    }
+
+    .tabela-impressao-descricao-produtos .linha-impar {
+        background-color: rgb(238,238,238);
+    }
+
+    .tabela-impressao-descricao-produtos tbody {
+        border-bottom: 1px solid;
+    }
+
+/*.rodape-impressao {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+}*/
+
+.rodape-impressao i {
+    color: #cec7c7 !important;
+    float: right;
+}
+
+.label-numero-pedido {
+    font-size: 16px !important;
+    color: rgb(169, 68, 66) !important;
+}
+
+.valorTotalReceber {
+    font-size: 22px !important;
+    color: #0F499D !important;
+}
+
+
+.valorTotalPagar {
+    font-size: 22px !important;
+    color: rgb(169, 68, 66) !important;
+}
+
+#tblNotasFiscais td {
+    vertical-align: middle;
+}
+
+#tblNotasFiscais textarea {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.linha-branca {
+    background-color: #fff !important;
+}
+
+.linha-cinza {
+    background-color: #eeeeee !important;
+}
+
+.table th {
+    border: none !important;
+    padding: 5px !important;
+}
+
+.table tr {
+    padding: 5px !important;
+}
+
+.table td {
+    text-align: center !important; /* alinhamento horizontal */
+    vertical-align: middle !important; /* alinhamento vertical */
+    border: none !important;
+    padding: 5px !important;
+}

@@ -1,0 +1,130 @@
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csprojResolveAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\Solution Base\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CopyComplete
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Google.Protobuf.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Zstandard.Net.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Renci.SshNet.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Memory.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Buffers.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csprojAssemblyReference.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CoreCompileInputs.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CopyComplete
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Business.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Google.Protobuf.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Zstandard.Net.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\BouncyCastle.Crypto.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Ubiety.Dns.Core.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Renci.SshNet.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Memory.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Buffers.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\K4os.Compression.LZ4.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\K4os.Hash.xxHash.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Numerics.Vectors.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Commom.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Data.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\InfinitySolutions.Entity.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\Newtonsoft.Json.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\bin\Debug\MySql.Data.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csprojAssemblyReference.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CoreCompileInputs.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.csproj.CopyComplete
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Business\obj\Debug\InfinitySolutions.Business.pdb

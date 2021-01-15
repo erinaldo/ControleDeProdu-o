@@ -1,0 +1,41 @@
+﻿@using InfinitySolutions.Presentation.Models
+@model LoginModel
+@{
+    ViewBag.Title = "Conecte-se";
+    ViewBag.Imagem = "~/Content/imagens/login.png"; ;
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+}
+
+<div class="row">
+    <div class="col-md-10">
+        <section id="loginForm">
+            @using (Html.BeginForm("Index", "Login", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                <hr />
+                <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                    <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Login.Usuario, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.Login.Usuario, new { @class = "form-control" })
+
+                    </div>
+                    @Html.LabelFor(m => m.Login.Senha, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Login.Senha, new { @class = "form-control" })
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Logar" class="btn btn-success" />
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>

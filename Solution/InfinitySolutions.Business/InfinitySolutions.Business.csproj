@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InfinitySolutions.Business</RootNamespace>
+    <AssemblyName>InfinitySolutions.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BusinessAcessoSistema.cs" />
+    <Compile Include="Base\BusinessBase.cs" />
+    <Compile Include="Base\InstaladorBanco.cs" />
+    <Compile Include="Base\BusinessLogin.cs" />
+    <Compile Include="BusinessCliente.cs" />
+    <Compile Include="Dominios\BusinessTipoContaPagar.cs" />
+    <Compile Include="Dominios\BusinessTipoFormaPagamentoContaPagar.cs" />
+    <Compile Include="Dominios\BusinessTipoFormaPagamentoContaReceber.cs" />
+    <Compile Include="Dominios\BusinessTipoFormaPagamentoParcela.cs" />
+    <Compile Include="Dominios\BusinessTipoFuncaoFuncionario.cs" />
+    <Compile Include="Dominios\BusinessTipoFuncaoTerceirizado.cs" />
+    <Compile Include="Dominios\BusinessTipoStatusContaPagar.cs" />
+    <Compile Include="Dominios\BusinessTipoStatusParcela.cs" />
+    <Compile Include="Financeiro\BusinessContaPagar.cs" />
+    <Compile Include="Financeiro\BusinessContaReceber.cs" />
+    <Compile Include="BusinessEndereco.cs" />
+    <Compile Include="Financeiro\BusinessFornecedor.cs" />
+    <Compile Include="Financeiro\BusinessNotaFiscal.cs" />
+    <Compile Include="Financeiro\BusinessPagamento.cs" />
+    <Compile Include="Financeiro\BusinessParcela.cs" />
+    <Compile Include="Producao\BusinessFichaTecnica.cs" />
+    <Compile Include="Producao\BusinessFrete.cs" />
+    <Compile Include="Producao\BusinessFuncionario.cs" />
+    <Compile Include="Producao\BusinessLinhaProducao.cs" />
+    <Compile Include="Producao\BusinessMateriaPrima.cs" />
+    <Compile Include="Producao\BusinessPedido.cs" />
+    <Compile Include="Producao\BusinessProduto.cs" />
+    <Compile Include="Producao\BusinessTabelaPreco.cs" />
+    <Compile Include="Producao\BusinessTerceirizado.cs" />
+    <Compile Include="Dominios\BusinessTipoFrete.cs" />
+    <Compile Include="Dominios\BusinessTipoFuncao.cs" />
+    <Compile Include="Dominios\BusinessTipoPermissao.cs" />
+    <Compile Include="Dominios\BusinessTipoFase.cs" />
+    <Compile Include="Dominios\BusinessTipoFormaPagamento.cs" />
+    <Compile Include="Dominios\BusinessTipoCor.cs" />
+    <Compile Include="Dominios\BusinessTipoTamanho.cs" />
+    <Compile Include="Dominios\BusinessTipoUnidadeMedida.cs" />
+    <Compile Include="Nfe\BusinessNfe.cs" />
+    <Compile Include="Dominios\BusinessTipoStatusLinhaProducao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InfinitySolutions.Commom\InfinitySolutions.Commom.csproj">
+      <Project>{AB72999A-487D-4391-90F0-7A4446B07959}</Project>
+      <Name>InfinitySolutions.Commom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InfinitySolutions.Data\InfinitySolutions.Data.csproj">
+      <Project>{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}</Project>
+      <Name>InfinitySolutions.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InfinitySolutions.Entity\InfinitySolutions.Entity.csproj">
+      <Project>{AE1BF525-0B57-4D53-8E35-257C247FDBDC}</Project>
+      <Name>InfinitySolutions.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

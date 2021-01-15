@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE1BF525-0B57-4D53-8E35-257C247FDBDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InfinitySolutions.Entity</RootNamespace>
+    <AssemblyName>InfinitySolutions.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AcessoSistema.cs" />
+    <Compile Include="Base\BaseDominio.cs" />
+    <Compile Include="Base\BaseEntidade.cs" />
+    <Compile Include="Base\Login.cs" />
+    <Compile Include="Dominio\TipoContaPagar.cs" />
+    <Compile Include="Dominio\TipoFormaPagamentoContaPagar.cs" />
+    <Compile Include="Dominio\TipoFormaPagamentoContaReceber.cs" />
+    <Compile Include="Dominio\TipoFormaPagamentoParcela.cs" />
+    <Compile Include="Dominio\TipoFuncaoFuncionario.cs" />
+    <Compile Include="Dominio\TipoFuncaoTerceirizado.cs" />
+    <Compile Include="Dominio\TipoStatusContaPagar.cs" />
+    <Compile Include="Dominio\TipoStatusParcela.cs" />
+    <Compile Include="Enum\EnumTipoContaPagar.cs" />
+    <Compile Include="Enum\EnumTipoFormaPagamento.cs" />
+    <Compile Include="Enum\EnumTipoStatusContaPagar.cs" />
+    <Compile Include="Enum\EnumTipoStatusLinhaProducao.cs" />
+    <Compile Include="Financeiro\ContaPagar.cs" />
+    <Compile Include="Financeiro\ContaReceber.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Dominio\TipoCor.cs" />
+    <Compile Include="Dominio\TipoFuncao.cs" />
+    <Compile Include="Dominio\TipoTamanho.cs" />
+    <Compile Include="Financeiro\Fornecedor.cs" />
+    <Compile Include="Financeiro\NotaFiscal.cs" />
+    <Compile Include="Enum\EnumContaReceberStatus.cs" />
+    <Compile Include="Financeiro\Pagamento.cs" />
+    <Compile Include="Financeiro\Parcela.cs" />
+    <Compile Include="Dtos\LinhaProducaoExibicaoDto.cs" />
+    <Compile Include="Dtos\LinhaProducaoProdutoDto.cs" />
+    <Compile Include="Producao\Frete.cs" />
+    <Compile Include="Nfe\aProt.cs" />
+    <Compile Include="Nfe\cliente.cs" />
+    <Compile Include="Nfe\EmitirNfe.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="Enum\EnumPedidoStatus.cs" />
+    <Compile Include="Enum\EnumTipoFase.cs" />
+    <Compile Include="Enum\EnumTipoFuncao.cs" />
+    <Compile Include="Enum\EnumTipoPermissao.cs" />
+    <Compile Include="Producao\FichaTecnica.cs" />
+    <Compile Include="Producao\Funcionario.cs" />
+    <Compile Include="Producao\LinhaProducao.cs" />
+    <Compile Include="Producao\MateriaPrima.cs" />
+    <Compile Include="Nfe\fatura.cs" />
+    <Compile Include="Nfe\log.cs" />
+    <Compile Include="Nfe\parcela.cs" />
+    <Compile Include="Nfe\pedido.cs" />
+    <Compile Include="Nfe\produto.cs" />
+    <Compile Include="Nfe\retorno.cs" />
+    <Compile Include="Nfe\transportadora.cs" />
+    <Compile Include="Nfe\transporte.cs" />
+    <Compile Include="Producao\Pedido.cs" />
+    <Compile Include="Producao\Produto.cs" />
+    <Compile Include="Producao\Terceirizado.cs" />
+    <Compile Include="Dominio\TipoStatusLinhaProducao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Producao\TabelaPreco.cs" />
+    <Compile Include="Dominio\TipoUnidadeMedida.cs" />
+    <Compile Include="Dominio\TipoFase.cs" />
+    <Compile Include="Dominio\TipoFormaPagamento.cs" />
+    <Compile Include="Dominio\TipoFrete.cs" />
+    <Compile Include="TipoPermissao.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

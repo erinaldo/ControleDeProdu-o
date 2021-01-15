@@ -1,0 +1,197 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.ProdutoModel
+@{
+    ViewBag.Title = "Produtos";
+    ViewBag.Imagem = "~/Content/imagens/logoVestiry.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+
+        @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ADICIONAR))
+        {
+            <a data-toggle="modal" data-target="#modalIncluirProduto">
+                Adicionar Produto
+            </a>
+        }
+
+        <div class="jumbotron">
+            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">DESCRIÇÃO</th>
+                        <th scope="col">VALOR</th>
+                        <th scope="col">QNT PRODUÇÃO (HORA/FUNCIONÁRIO)</th>
+                        <th scope="col">AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @if (Model.Retorno.Entity != null)
+                    {
+                        foreach (var produto in (List<Produto>)Model.Retorno.Entity)
+                        {
+                            <tr>
+                                <td scope="col">@produto.NumeroProdutoCliente</td>
+                                <td scope="col">@produto.Descricao.ToUpper()</td>
+                                <td scope="col">@produto.Valor.ToString("C")</td>
+                                <td scope="col">@produto.QuantidadeProducaoHoraFuncionario</td>
+                                @*<td scope="col">
+                                        @String.Join(", ", produto.MateriasPrimas.Select(m => String.Format(@"{0} ({1}{2})",
+                                                        m.Descricao.ToUpper(), m.Quantidade, m.TipoUnidadeMedida.Sigla.ToLower())).ToArray())
+                                    </td>*@
+                                <td scope="col">
+                                    <img id="@produto.Codigo" src="~/Content/imagens/EditarMenor.png" alt="ALTERAR PRODUTO" title="ALTERAR PRODUTO" class="js-AlterarProduto" />
+                                    <img id="@produto.Codigo" src="~/Content/imagens/ExcluirMenor.png" alt="EXCLUIR PRODUTO" title="EXCLUIR PRODUTO" class="js-ExcluirProduto" />
+                                </td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Create", "Produto", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", id = "formIncluirProduto" }))
+{
+
+    @Html.HiddenFor(model => model.Produto.Codigo, new { id = "hdnProdutoCodigo" })
+
+    <div class="modal fade" id="modalIncluirProduto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">PRODUTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="divProdutoAdicionarProduto" class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Descrição</label>
+                                @Html.TextBoxFor(m => m.Produto.Descricao, new { id = "txtProdutoDescricao", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Qnt Produção (Hora/Funcionário)</label>
+                                @Html.TextBoxFor(m => m.Produto.QuantidadeProducaoHoraFuncionario, new { id = "txtProdutoQuantidadeProducaoHoraFuncionario", @class = "form-control js-obrigatorio js-decimal-um" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Nº Produto Cliente</label>
+                                @Html.TextBoxFor(m => m.Produto.NumeroProdutoCliente, new { id = "txtProdutoNumeroProdutoCliente", @class = "form-control js-numero" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Modelo</label>
+                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Modelo, new { id = "txtProdutoFichaTecnicaModelo", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Tipo</label>
+                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Tipo, new { id = "txtProdutoFichaTecnicaTipo", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>NCM</label>
+                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Ncm, new { id = "txtProdutoFichaTecnicaNcm", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Descrição</label>
+                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Descricao, new { id = "txtProdutoFichaTecnicaDescricao", @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                                <label>Foto</label>
+                                <div class="file-upload-wrapper">
+                                    <input type="file" id="input-file-now" class="multi" accept="jpg|png" maxlength="1" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6">
+                                <div class="text-center">
+                                    <img id="imgProdutoDetalharFichaTecnica" src="~/Content/imagens/logoVestiry.png" class="float-left img-rounded img-ficha-tecnica-pedido" alt="..." />
+                                    @Html.HiddenFor(m => m.Produto.FichaTecnica.Codigo, new { id = "hdnPedidoFichaTecnicaCodigo" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="divProdutoAdicionarMateriaPrima" class="jumbotron">
+                        <div class="form-group">
+                            <div id="divMensagemProdutoMateriaPrima" class="alert alert-danger invisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem"></span></label>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Matéria Prima</label>
+                                @Html.DropDownListFor(m => m.MateriaPrima.Codigo, new SelectList(Model.Dominios.MateriasPrimas, "Codigo", "Descricao"), "...", new { id = "ddlProdutoMateriaPrima", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-xs-3">
+                                <label><span class="fonte-vermelha control-label">* </span>Quantidade</label>
+                                @Html.TextBoxFor(m => m.MateriaPrima.Quantidade, new { id = "txtProdutoMateriaPrimaQuantidade", @class = "form-control js-decimal js-obrigatorio" })
+                                <label id="lblProdutoMateriaPrimaUnidadeMedida"></label>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-xs-12 width-55px">
+                                <div class="form-group">
+                                    <label class="label-blank">&nbsp;</label>
+                                    <button id="btnAdicionarProdutoMateriaPrima" type="button" class="btn btn-success">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                                <div class="row tabela-inicio">
+                                    <div class="jumbotron">
+                                        <table id="tblProdutoMateriasPrimas" class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">MATÉRIA PRIMA</th>
+                                                    <th scope="col">QUANTIDADE</th>
+                                                    <th scope="col">VALOR </th>
+                                                    <th scope="col">VALOR TOTAL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    <label>Valor Total: <span id="spanProdutoValorTotal"></span></label>
+                                    @Html.HiddenFor(m => m.Produto.Valor, new { id = "hddProdutoValorProduto" })
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarProduto" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<script src="~/Scripts/Produto/index.js"></script>
+
+<script>
+    var mensagem = {
+        MSG31: '@Html.Raw(Mensagens.MSG_31)'
+    }
+</script>

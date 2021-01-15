@@ -1,0 +1,720 @@
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll.config
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe.config
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.rsp
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe.config
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.rsp
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.AppContext.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Collections.Immutable.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Console.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Compression.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Claims.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.ValueTuple.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe.config
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.rsp
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe.config
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Web.Infrastructure.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Owin.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\WebGrease.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\Alex\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.rsp
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.rsp
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.AppContext.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Collections.Immutable.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Console.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Compression.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Claims.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.ValueTuple.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.rsp
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Web.Infrastructure.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Owin.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\WebGrease.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE JOGO\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.rsp
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.rsp
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.AppContext.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Collections.Immutable.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Console.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Compression.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Claims.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.ValueTuple.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.rsp
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe.config
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\DotNet.Highcharts.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Web.Infrastructure.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Owin.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\WebGrease.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csprojAssemblyReference.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\ALEX - CONTROLE INVESTIMENTOS\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CoreCompileInputs.cache
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll.config
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe.config
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.rsp
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe.config
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.rsp
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.AppContext.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Collections.Immutable.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Console.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Compression.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.AccessControl.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Claims.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.ValueTuple.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe.config
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.rsp
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe.config
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\DotNet.Highcharts.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Web.Infrastructure.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Owin.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\WebGrease.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\MySql.Data.dll
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.pdb
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CopyComplete
+D:\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csprojAssemblyReference.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll.config
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe.config
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.rsp
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe.config
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.rsp
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.AppContext.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Console.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Compression.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Claims.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.ValueTuple.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe.config
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.rsp
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\DotNet.Highcharts.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Owin.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\RestSharp.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Rotativa.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\WebGrease.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\MySql.Data.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Google.Protobuf.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Zstandard.Net.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\BouncyCastle.Crypto.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Ubiety.Dns.Core.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Renci.SshNet.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Buffers.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\K4os.Compression.LZ4.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\K4os.Hash.xxHash.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Memory.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Numerics.Vectors.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\RestSharp.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.pdb
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\MySql.Data.xml
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csprojAssemblyReference.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CopyComplete
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.dll
+C:\Users\user-07\Source\Workspaces\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll.config
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Presentation.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.exe.config
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csc.rsp
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.exe.config
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\csi.rsp
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.AppContext.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Collections.Immutable.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Console.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Compression.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.IO.Pipes.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Reflection.Metadata.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.AccessControl.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Claims.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Security.Principal.Windows.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.ValueTuple.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.exe.config
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\vbc.rsp
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\roslyn\VBCSCompiler.exe.config
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\DotNet.Highcharts.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Web.Infrastructure.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Owin.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\RestSharp.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Rotativa.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\WebGrease.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\MySql.Data.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Google.Protobuf.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Zstandard.Net.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\K4os.Compression.LZ4.Streams.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\BouncyCastle.Crypto.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Ubiety.Dns.Core.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Renci.SshNet.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Buffers.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\K4os.Compression.LZ4.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\K4os.Hash.xxHash.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Memory.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Numerics.Vectors.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Business.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Commom.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Entity.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\RestSharp.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Helpers.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Mvc.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Optimization.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.Razor.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Deployment.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\System.Web.WebPages.Razor.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Newtonsoft.Json.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Antlr3.Runtime.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\EntityFramework.SqlServer.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Core.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Facebook.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Cookies.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Google.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.Twitter.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.Owin.Security.OAuth.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\InfinitySolutions.Data.pdb
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\bin\MySql.Data.xml
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csprojAssemblyReference.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CoreCompileInputs.cache
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.csproj.CopyComplete
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.dll
+D:\CAIO\TFS\INFINITY SOLUTIONS\PRODUÇÃO - VESTIRY\Solution\InfinitySolutions.Presentation\obj\Debug\InfinitySolutions.Presentation.pdb

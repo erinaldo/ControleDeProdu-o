@@ -1,0 +1,232 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.ContasPagarModel
+@{
+    ViewBag.Title = "Contas Pagar";
+    ViewBag.Imagem = "~/Content/imagens/ContasPagar.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+
+
+@using (Html.BeginForm("Salvar", "ContasPagar", FormMethod.Post, new { @class = "form-horizontal", id = "formContasPagar" }))
+{
+    <div class="row tabela-inicio">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+            @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ADICIONAR))
+            {
+                <a data-toggle="modal" data-target="#modalIncluirContaPagar">
+                    Adicionar Conta Pagar
+                </a>
+            }
+
+            <div class="jumbotron">
+                <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                    <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-2 col-md-2 col-xs-2">
+                        <label><span class="fonte-vermelha control-label">* </span>Data Inicio</label>
+                        @Html.TextBoxFor(m => m.DataInicio, new { id = "txtContasPagarDataInicio", @class = "form-control js-obrigatorio js-data" })
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-2">
+                        <label><span class="fonte-vermelha control-label">* </span>Data Fim</label>
+                        @Html.TextBoxFor(m => m.DataFim, new { id = "txtContasPagarDataFim", @class = "form-control js-obrigatorio js-data" })
+                    </div>
+
+                    <div class="col-lg-1 col-md-1 col-xs-1">
+                        @*<label class="label-blank">&nbsp;</label>*@
+                        <button id="btnContasPagarPesquisar" type="button" class="btn btn-info">
+                            Pesquisar
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-xs-2">
+                        <label></label>
+                        <label> </label>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-2 valorTotalPagar">
+                        <label>Total:</label>
+                        <label id="lblContasReceberTotal">@Model.Total.ToString("C")</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumbotron">
+                <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                    <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                </div>
+                <table id="tblContasPagar" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">DESCRIÇÃO</th>
+                            <th scope="col">FORNECEDOR</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">VENCIMENTO</th>
+                            <th scope="col">EMISSÃO</th>
+                            <th scope="col">VALOR TOTAL</th>
+                            <th scope="col">AÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @if (Model.Retorno.Entity != null)
+                        {
+                            foreach (var contaPagar in (List<ContaPagar>)Model.Retorno.Entity)
+                            {
+                                var tipoStatusPagamento = ((EnumTipoStatusContaPagar)contaPagar.TipoStatusContaPagar.Codigo).RecuperaDescricaoEnum();
+
+                                <tr>
+                                    <td scope="col">@contaPagar.Descricao.ToUpper()</td>
+                                    <td scope="col">@contaPagar.Fornecedor.Nome.ToUpper()</td>
+                                    <td scope="col">@tipoStatusPagamento</td>
+                                    <td scope="col">@contaPagar.DataVencimento.Value.ToShortDateString()</td>
+                                    <td scope="col">@contaPagar.DataEmissao.Value.ToShortDateString()</td>
+                                    <td scope="col">@contaPagar.Valor.Value.ToString("C")</td>
+                                    <td scope="col">
+                                        <img id="@contaPagar.Codigo" src="~/Content/imagens/EditarMenor.png" alt="ALTERAR CONTA PAGAR" title="ALTERAR CONTA PAGAR" class="js-AlterarContaPagar" />
+                                        <img id="@contaPagar.Codigo" src="~/Content/imagens/ExcluirMenor.png" alt="EXCLUIR CONTA PAGAR" title="EXCLUIR CONTA PAGAR" class="js-ExcluirContaPagar" />
+                                        @if (contaPagar.TipoStatusContaPagar.Codigo != (int)EnumTipoStatusContaPagar.PAGO)
+                                        {
+                                            <img id="@contaPagar.Codigo" src="~/Content/imagens/DAR BAIXA.png" alt="DAR BAIXA PAGAMENTO" title="DAR BAIXA PAGAMENTO" class="js-DarBaixaPagamentoContaPagar" />
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    @Html.HiddenFor(model => model.ContaPagar.Codigo, new { id = "hdnContaPagarCodigo" })
+
+    <div class="modal fade" id="modalIncluirContaPagar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CONTA PAGAR</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Descrição</label>
+                                @Html.TextBoxFor(m => m.ContaPagar.Descricao, new { id = "txtContaPagarDescricao", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Fornecedor</label>
+                                @Html.DropDownListFor(m => m.ContaPagar.Fornecedor.Codigo, new SelectList(Model.Dominios.Fornecedores, "Codigo", "Nome"), "...", new { id = "ddlContaPagarFornecedor", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Data Emissão</label>
+                                @Html.TextBoxFor(m => m.ContaPagar.DataEmissao, new { id = "txtContaPagarDataEmissao", @class = "form-control js-data" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Data Vencimento</label>
+                                @Html.TextBoxFor(m => m.ContaPagar.DataVencimento, new { id = "txtContaPagarDataVencimento", @class = "form-control js-data" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Valor total</label>
+                                @Html.TextBoxFor(m => m.ContaPagar.Valor, new { id = "txtContaPagarValor", @class = "form-control js-monetaria" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Tipo</label>
+                                @Html.DropDownListFor(m => m.ContaPagar.TipoContaPagar.Codigo, new SelectList(Model.Dominios.TiposContasPàgar, "Codigo", "Descricao"), "...", new { id = "ddlContaPagarTipoContaPagar", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Quantidade Parcelas</label>
+                                @Html.TextBoxFor(m => m.ContaPagar.QuantidadeParcelas, new { id = "txtContaPagarQuantidadeParcelas", @class = "form-control js-numerica" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Status</label>
+                                @Html.DropDownListFor(m => m.ContaPagar.TipoStatusContaPagar.Codigo, new SelectList(Model.Dominios.TiposStatusContaPagar, "Codigo", "Descricao"), "...", new { id = "ddlContaPagarTipoStatusContaPagar", @class = "form-control js-obrigatorio" })
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divContaPagarParcela" class="jumbotron invisivel">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+
+                        <table id="tblContaPagarParcelas" class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">NÚMERO</th>
+                                    <th scope="col">VENCIMENTO</th>
+                                    <th scope="col">VALOR</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarContaPagar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@using (Html.BeginForm("DarBaixaPagamento", "ContasPagar", FormMethod.Post, new { @class = "form-horizontal", id = "formDarBaixaPagamento" }))
+{
+    <div class="modal fade" id="modalRegistrarPagamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">REGISTRAR PAGAMENTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        @Html.HiddenFor(m => m.Pagamento.ContaPagar.Codigo, new { id = "hdnPagamentoContaPagarCodigo" })
+                        <div class="form-group">
+                            <div class="col-lg-3 col-md-3 col-xs-3">
+                                <label><span class="fonte-vermelha control-label">* </span>Valor</label>
+                                @Html.TextBoxFor(m => m.Pagamento.Valor, new { id = "txtContaPagarPagamentoValor", @class = "form-control js-monetaria js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-xs-3">
+                                <label>Juros</label>
+                                @Html.TextBoxFor(m => m.Pagamento.Juros, new { id = "txtContaPagarPagamentoJuros", @class = "form-control js-monetaria" })
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-xs-3">
+                                <label><span class="fonte-vermelha control-label">* </span>Data Vencimento</label>
+                                @Html.TextBoxFor(m => m.Pagamento.DataVencimento, new { id = "txtContaPagarPagamentoDataVencimento", @class = "form-control js-data js-obrigatorio", disabled = "true" })
+                                @Html.HiddenFor(m => m.Pagamento.DataVencimento, new { id = "hdnDataVencimento" })
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-xs-3">
+                                <label><span class="fonte-vermelha control-label">* </span>Data Pagamento</label>
+                                @Html.TextBoxFor(m => m.Pagamento.DataPagamento, new { id = "txtContaPagarPagamentoDataPagamento", @class = "form-control js-data js-obrigatorio" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnBaixaPagamento" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/Scripts/ContasPagar/index.js"></script>

@@ -1,0 +1,699 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.PedidoModel
+@{
+    ViewBag.Title = "Pedidos";
+    ViewBag.Imagem = "~/Content/imagens/Pedido.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+    var funcao = login.TiposFuncoes.FirstOrDefault();
+    var descricaoTipoFaseAnterior = ((EnumTipoFase)login.TiposFuncoes.FirstOrDefault().Codigo - 1).RecuperaDescricaoEnum();
+}
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+
+        @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ADICIONAR))
+        {
+            <a data-toggle="modal" data-target="#modalIncluirPedido">
+                Adicionar Pedido
+            </a>
+        }
+        <div class="jumbotron">
+            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">CLIENTE</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">FASE</th>
+                        <th scope="col">DATA PREVISÃO ENTREGA</th>
+                        <th scope="col">AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Retorno.Entity != null)
+                    {
+                        foreach (var pedido in (List<Pedido>)Model.Retorno.Entity)
+                        {
+                            var dataPrevisaoEntrega = @pedido.DataPrevisaoEntrega.HasValue ? @pedido.DataPrevisaoEntrega.Value.ToShortDateString() : " - ";
+
+                            <tr>
+                                <td scope="col">@pedido.Codigo.ToString("000000")</td>
+                                <td scope="col">@pedido.Cliente.Apelido</td>
+                                <td scope="col">@pedido.Status.RecuperaDescricaoEnum()</td>
+                                <td scope="col">@pedido.TipoFase.Descricao</td>
+                                <td scope="col"> @dataPrevisaoEntrega </td>
+                                <td scope="col">
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ALTERAR))
+                                    {<img id="@pedido.Codigo" src="~/Content/imagens/EditarMenor.png" alt="ALTERAR PEDIDO" title="ALTERAR PEDIDO" class="js-AlterarPedido" />}
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.EXCLUIR))
+                                    {<img id="@pedido.Codigo" src="~/Content/imagens/ExcluirMenor.png" alt="EXCLUIR PEDIDO" title="EXCLUIR PEDIDO" class="js-ExcluirPedido" />}
+                                    <img id="@pedido.Codigo" src="~/Content/imagens/logoVestiry.png" alt="VISUALIZAR PRODUTOS" title="VISUALIZAR PRODUTOS" class="js-VerProdutos" />
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.APROVAR_ORCAMENTO))
+                                    {<img id="@pedido.Codigo" src="~/Content/imagens/Imprimir.png" alt="IMPRIMIR PEDIDO" title="IMPRIMIR PEDIDO" class="js-pedidoImprimir" />}
+                                    @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.APROVAR_ORCAMENTO) && pedido.TipoFase.Codigo == (int)EnumTipoFase.ORCAMENTO)
+                                    {<img id="@pedido.Codigo" src="~/Content/imagens/DAR BAIXA.png" alt="CONFIRMAR ORÇAMENTO" title="CONFIRMAR ORÇAMENTO" class="js-ConfirmarOrcamento" />}
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Salvar", "Pedido", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal", id = "formIncluirPedido" }))
+{
+    @Html.HiddenFor(model => model.Pedido.Codigo, new { id = "hdnPedidoCodigo" })
+    @Html.HiddenFor(model => model.Pedido.FichaTecnica.Codigo, new { id = "hdnPedidofichaTecnicaCodigo" })
+
+    <div class="modal fade" id="modalIncluirPedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">PEDIDO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="divPedidoAdicionarPedido" class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    <label id="lblNumeroPedido" class="label-numero-pedido">#@Model.Pedido.Codigo.ToString("0000000")</label>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label><span class="fonte-vermelha control-label">* </span>Cliente</label>
+                                    @Html.DropDownListFor(m => m.Pedido.Cliente.Codigo, new SelectList(Model.Dominios.Clientes, "Codigo", "Apelido"), "...", new { id = "ddlPedidoCliente", @class = "form-control js-obrigatorio" })
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label>Nº Pedido Cliente</label>
+                                    @Html.TextBoxFor(m => m.Pedido.NumeroPedidoCliente, new { id = "txtNumeroPedidoCliente", @class = "form-control js-numero" })
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label><span class="fonte-vermelha control-label">* </span>Tabela de Preço</label>
+                                    @Html.DropDownListFor(m => m.Pedido.TabelaPreco.Codigo, new SelectList(Model.Dominios.TabelasPreco, "Codigo", "Descricao"), "...", new { id = "ddlPedidoTabelaPreco", @class = "form-control js-obrigatorio" })
+                                    @Html.HiddenFor(m => m.Pedido.TabelaPreco.Especial, new { id = "hddPedidoTabelaPrecoEspecial" })
+                                    @Html.HiddenFor(m => m.Pedido.TabelaPreco.Imposto, new { id = "hddPedidoTabelaPrecoImposto" })
+                                    @Html.Hidden("hddTabelaPreco")
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label><span class="fonte-vermelha control-label">* </span>Fase Inicial</label>
+                                    @Html.DropDownListFor(m => m.Pedido.TipoFase.Codigo, new SelectList(Model.Dominios.TiposFases, "Codigo", "Descricao"), "...", new { id = "ddlPedidoFase", @class = "form-control js-obrigatorio" })
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <label><span class="fonte-vermelha control-label">* </span>Forma de Pagamento</label>
+                                    @Html.DropDownListFor(m => m.Pedido.TipoFormaPagamento.Codigo, new SelectList(Model.Dominios.TiposFormasPagamento, "Codigo", "Descricao"), "...", new { id = "ddlPedidoFormaPagamento", @class = "form-control js-obrigatorio" })
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-xs-1 width-55px">
+                                    <div class="form-group">
+                                        <label class="label-blank">&nbsp;</label>
+                                        <button id="btnAdicionarPedidoAdicionarTipoFormaPagamento" type="button" class="btn btn-info" data-toggle="modal" data-target="#modalIncluirTipoPagamento">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <label><span class="fonte-vermelha control-label">* </span>Número de Parcelas</label>
+                                    @Html.TextBoxFor(m => m.Pedido.NumeroParcelas, new { id = "txtPedidoNumeroParcelas", @class = "form-control js-numero js-obrigatorio ", disabled = "true" })
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <label><span class="fonte-vermelha control-label">* </span>Data Pagamento</label>
+                                    @Html.TextBoxFor(m => m.Pedido.DataPagamento, new { id = "txtPedidoDataPagamento", @class = "form-control js-data js-obrigatorio", disabled = "true" })
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <label><span class="fonte-vermelha control-label">* </span>Data Previsão de Entrega</label>
+                                    @Html.TextBoxFor(m => m.Pedido.DataPrevisaoEntrega, new { id = "txtPedidoDataPrevisaoEntrega", @class = "form-control js-data js-obrigatorio" })
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <label>Observação</label>
+                                    @Html.TextAreaFor(m => m.Pedido.Observacao, new { id = "txtPedidoObservacao", @class = "form-control" })
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <label>Observação Nota Fiscal</label>
+                                    @Html.TextAreaFor(m => m.Pedido.ObservacaoNotaFiscal, new { id = "txtPedidoObservacaoNotaFiscal", @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jumbotron">
+                        <div id="divPedidoAdicionarProduto">
+                            <div id="divMensagemPedidoProduto" class="alert alert-danger @ClasseVisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                    <label>Nº Produto Cliente</label>
+                                    @Html.TextBoxFor(m => m.Produto.NumeroProdutoCliente, new { id = "txtPedidoProdutoNumeroCliente", @class = "form-control js-numero" })
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <label><span class="fonte-vermelha control-label">* </span>Produto</label>
+                                    @Html.DropDownListFor(m => m.Produto.Codigo, new SelectList(Model.Dominios.Produtos, "Codigo", "Descricao"), "...", new { id = "ddlPedidoProduto", @class = "form-control js-obrigatorio editable-select" })
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <label><span class="fonte-vermelha control-label">* </span>Cor</label>
+                                    @Html.DropDownListFor(m => m.Produto.TipoCor.Codigo, new SelectList(Model.Dominios.TiposCores, "Codigo", "Descricao"), "...", new { id = "ddlPedidoProdutoTipoCor", @class = "form-control js-obrigatorio editable-select" })
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-xs-12 width-55px">
+                                    <div class="form-group">
+                                        <label class="label-blank">&nbsp;</label>
+                                        <button id="btnAdicionarPedidoAdicionarCor" type="button" class="btn btn-info" data-toggle="modal" data-target="#modalIncluirCor">
+                                            +
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                    <label><span class="fonte-vermelha control-label">* </span>Tamanho</label>
+                                    @Html.DropDownListFor(m => m.Produto.TipoTamanho.Codigo, new SelectList(Model.Dominios.TiposTamanhos, "Codigo", "Descricao"), "...", new { id = "ddlPedidoTipoTamanho", @class = "form-control js-obrigatorio editable-select" })
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-xs-12 width-55px">
+                                    <div class="form-group">
+                                        <label class="label-blank">&nbsp;</label>
+                                        <button id="btnAdicionarPedidoAdicionarTamanho" type="button" class="btn btn-info" data-toggle="modal" data-target="#modalIncluirTamanho">
+                                            +
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-xs-3">
+                                    <label><span class="fonte-vermelha control-label">* </span>Quantidade</label>
+                                    @Html.TextBoxFor(m => m.Produto.Quantidade, new { id = "txtPedidoProdutoQuantidade", @class = "form-control js-decimal js-obrigatorio" })
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                    <label>Nº Pedido Cliente</label>
+                                    @Html.TextBoxFor(m => m.Produto.NumeroProdutoCliente, new { id = "txtPedidoProdutoNumeroPedidoCliente", @class = "form-control js-numero" })
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                    <label>Nº Linha Pedido Cliente</label>
+                                    @Html.TextBoxFor(m => m.Produto.NumeroProdutoCliente, new { id = "txtPedidoProdutoLinhaPedidoCliente", @class = "form-control js-numero" })
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-xs-12 width-55px">
+                                    <div class="form-group">
+                                        <label class="label-blank">&nbsp;</label>
+                                        <button id="btnAdicionarPedidoAdicionarProduto" type="button" class="btn btn-success">
+                                            +
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divPedidoTabelaProdutos" class="col-lg-12 col-md-12 col-xs-12">
+                            <div class="row tabela-inicio">
+                                <div class="jumbotron">
+                                    <div id="divMensagemPedidoProduto" class="alert alert-danger @ClasseVisivel js-mensagem" role="alert">
+                                        <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                                    </div>
+                                    <table id="tblPedidoProduto" class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">NCM</th>
+                                                <th scope="col">Nº CLIENTE</th>
+                                                <th scope="col">PRODUTO</th>
+                                                <th scope="col">COR</th>
+                                                <th scope="col">TAMANHO</th>
+                                                <th scope="col">QUANTIDADE</th>
+                                                <th scope="col">VALOR UN.</th>
+                                                <th scope="col">VALOR</th>
+                                                <th scope="col">PEDIDO</th>
+                                                <th scope="col">LINHA</th>
+                                                <th scope="col">AÇÕES</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Desconto: </label>
+                                @Html.TextBoxFor(m => m.Pedido.Desconto, new { id = "txtPedidoDesconto", @class = "form-control js-monetaria" })
+                            </div>
+                            <div id="divValorTotalFixo" class="col-lg-4 col-md-4 col-xs-4">
+                                <label class="label-blank">&nbsp;</label>
+                                <label>Valor Total: <span id="spanPedidoValorTotal"></span></label>
+                                @Html.HiddenFor(m => m.Pedido.Valor, new { id = "hddPedidoValorTotal" })
+                            </div>
+
+                            <div id="divValorTotalEditavel" class="col-lg-3 col-md-3 col-xs-3 invisivel">
+                                <label>Valor Total: </label>
+                                @Html.TextBoxFor(m => m.Pedido.ValorEspecial, new { id = "txtPedidoValorEspecial", @class = "form-control js-monetaria" })
+                            </div>
+                            <div id="divBtnRatearValor" class="col-lg-1 col-md-1 col-xs-12 width-55px">
+                                <div class="form-group">
+                                    <button id="btnRatearValor" type="button" class="btn btn-info">
+                                        <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarPedido" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLinhaProducao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id="divHiddensProdutosTercerizados">
+        </div>
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LINHA PRODUÇÃO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="divPedidoTabelaLinhaProducao" class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="jumbotron">
+                            @Html.Hidden("codigoPedido", 0, new { id = "hdnPedidoLinhaProducaoCodigo" })
+                            @Html.Hidden("adicionarLinhaProducao", false, new { id = "hdnAdicionarLinhaProducao" })
+                            <table id="tblLinhaProducao" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">QUANTIDADE</th>
+                                        <th scope="col">PRODUTO</th>
+                                        <th scope="col">INICIO</th>
+                                        <th scope="col">FIM</th>
+                                        <th scope="col">COLABORADORES</th>
+                                        <th scope="col">AÇÕES</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-success" value="Adicionar" id="btnAdicionarLinhaProducao" title="ADICIONAR PEDIDO NA LINHA DE PRODUÇÃO" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@using (Html.BeginForm("Alter", "Pedido", FormMethod.Post, new { @class = "form-horizontal", id = "formDarBaixaPedidoProdutoPronto" }))
+{
+    <div class="modal fade" id="modalDetalharPedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">PEDIDO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div class="form-group">
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Nº Pedido</label>
+                                <span id="txtPedidoDetalharNumeroPedido"></span>
+                                @Html.HiddenFor(m => m.Pedido.Codigo, new { id = "hdnPedidoDetalharCodigo" })
+                                @Html.HiddenFor(m => m.Pedido.TipoFormaPagamento.Codigo, new { id = "hdnPedidoDetalharTipoFormaPagamentoCodigo" })
+                                @Html.HiddenFor(m => m.Pedido.TipoFormaPagamento.Dias, new { id = "hdnPedidoDetalharTipoFormaPagamentoDias" })
+                                @Html.HiddenFor(m => m.Pedido.NumeroNfe, new { id = "hdnPedidoDetalharNumeroNfe" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Data Previsão Entrega</label>
+                                <span id="txtPedidoDetalharDataPrevisaoEntrega"></span>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Fase</label>
+                                <span id="txtPedidoDetalharFasePedido"></span>
+                                @Html.HiddenFor(m => m.Pedido.TipoFase.Codigo, new { id = "hdnPedidoDetalharCodigoFasePedido" })
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                                <label>Nome Cliente</label>
+                                <span id="txtPedidoDetalharNomeCliente"></span>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                                <label>Observação</label>
+                                <span id="txtPedidoDetalharObservação"></span>
+                            </div>
+
+                            <div id="divDetalharPedidoDownloads">
+                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                    <a id="downloadDanfe" href="" target="_blank"><img src="~/Content/imagens/IconeDanfe.png" class=""></a>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                    <a id="downloadXml" href="" target="_blank"><img src="~/Content/imagens/IconeXml.png" class=""></a>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-2">
+                                    <a id="enviarPorEmail" href="#"><img src="~/Content/imagens/EnvioPorEmail.png" class=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @if (funcao.Codigo != (int)EnumTipoFuncao.ADMINISTRATIVO)
+                    {
+                        <div class="jumbotron">
+
+                            <div id="divMensagemPedidoDetalharProduto" class="alert alert-danger invisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    @Html.HiddenFor(m => m.Produto.CodigoPedidoProduto, new { id = "hdnPedidoDetalharCodigoPedidoProduto" })
+                                    <table id="tblPedidoDetalharProduto" class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">PRODUTO</th>
+                                                <th scope="col">COR</th>
+                                                <th scope="col">TAMANHO</th>
+                                                <th scope="col">QNT</th>
+                                                @if (funcao.Codigo > (int)EnumTipoFase.CORTE)
+                                                {
+                                                    <th scope="col" class="js-colunaQuantidadeAnteriorPronta">@descricaoTipoFaseAnterior</th>
+                                                }
+                                                <th scope="col" class="js-colunaQuantidadePronta">PRONTA</th>
+                                                <th scope="col" class="js-colunaQuantidadePronta">RESTANTE</th>
+                                                <th scope="col" class="js-colunaQuantidadePronta">PRODUZIDA</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="jumbotron">
+
+                            @Html.Hidden("ambienteProducao", 0, new { id = "hdnAmbienteProducao" })
+                            <div id="divMensagemPedidoDetalharProdutoFases" class="alert alert-danger invisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12 col-md-12 col-xs-12">
+                                    <table id="tblPedidoDetalharProdutoFases" class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">PRODUTO</th>
+                                                <th scope="col">TOTAL</th>
+                                                <th scope="col">CORTE</th>
+                                                <th scope="col">COSTURA</th>
+                                                <th scope="col">ACABAMENTO</th>
+                                                <th scope="col">FATURADO</th>
+                                                <th scope="col">FATURAR</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="jumbotron">
+                            <div id="divMensagemPedidoDetalharFrete" class="alert alert-danger invisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label><span class="fonte-vermelha control-label">* </span>Tipo Frete</label>
+                                    @Html.DropDownListFor(m => m.Pedido.Frete.TipoFrete.Codigo, new SelectList(Model.Dominios.TiposFrete, "Codigo", "Descricao"), "...", new { id = "ddlPedidoTipoFrete", @class = "form-control js-obrigatorio" })
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label>Transportadora</label>
+                                    @Html.TextBoxFor(m => m.Pedido.Frete.Transportadora, new { id = "txtDetalharPedidoFreteTransportadora", @class = "form-control" })
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-4">
+                                    <label>Volume</label>
+                                    <span id="txtPedidoDetalharFasePedido"></span>
+                                    @Html.TextBoxFor(m => m.Pedido.Frete.Volume, new { id = "txtDetalharPedidoFreteVolume", @class = "form-control js-numero" })
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="modal-footer">
+                        @if (funcao.Codigo == (int)EnumTipoFuncao.ADMINISTRATIVO)
+                        {<button id="btnSimularNotaFiscal" type="button" class="btn btn-secondary">
+                                <img src="~/Content/imagens/IconeNfe.png" title="SIMULAR NOTA FISCAL" alt="SIMULAR NOTA FISCAL" class="js-SimularNotaFiscal" />Simular NFE
+                            </button>
+                            <button id="btnGerarNotaFiscal" type="button" class="btn btn-secondary">
+                                <img src="~/Content/imagens/IconeNfe.png" title="GERAR NOTA FISCAL" alt="GERAR NOTA FISCAL" class="js-GerarNotaFiscal" />Gerar NFE
+                            </button>}
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIncluirCor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">COR</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div class="form-group">
+                            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                                <label><span class="fonte-vermelha control-label">* </span>Descricao</label>
+                                @Html.TextBoxFor(m => m.TipoCor.Descricao, new { id = "txtPedidoTipoCor", @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarTipoCor" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIncluirTamanho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">TAMANHO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div class="form-group">
+                            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                                <label><span class="fonte-vermelha control-label">* </span>Descricao</label>
+                                @Html.TextBoxFor(m => m.TipoTamanho.Descricao, new { id = "txtPedidoTipoTamanho", @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarTipoTamanho" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIncluirTipoPagamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">FORMA PAGAMENTO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div class="form-group">
+                            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Descricao</label>
+                                @Html.TextBoxFor(m => m.TipoFormaPagamento.Descricao, new { id = "txtPedidoTipoFormaPagamento", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Contem Parcelas</label>
+                                @Html.CheckBoxFor(m => m.TipoFormaPagamento.ContemParcelas, new { id = "ckbPedidoTipoFormaPagamentoContemParcelas", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Dias</label>
+                                @Html.TextBoxFor(m => m.TipoFormaPagamento.Dias, new { id = "txtPedidoTipoPagamentoDias", @class = "form-control js-numero" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarTipoFormaPagamento" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFichaTecnica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">FICHA TÉCNICA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row tabela-inicio">
+                        <div class="col-lg-12 col-md-12 col-xs-12">
+                            <div class="jumbotron ficha-tecnica">
+                                <table class="ficha-tecnica-tabela text-center">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h3 class="fonte-titulo-ficha-tecnica">FICHA TÉCNICA</h3>
+                                                <input type="hidden" id="hdnCodigoFichaTecnica" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h4 id="h4FichaTecnicaNomeProduto">NOME PRODUTO</h4>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="5" class="td-logo-ficha-tecnica">
+                                                <img id="imgPedidoFichaTecnica" class="imagem-logo-ficha-tecnica" alt="logo" src="~/Content/imagens/logoVestiry.png" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="campos-ficha-tecnica">
+                                                <span>CÓDIGO: </span>
+                                                @Html.TextBoxFor(m => m.Produto.NumeroProdutoCliente, new { id = "txtFichaTecnicaNumeroPedidoCliente", @class = "form-control js-numero" })
+                                                @Html.HiddenFor(m => m.Produto.Codigo, new { id = "hdnCodigoProduto" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="campos-ficha-tecnica">
+                                                <span>MODELO:</span>
+                                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Modelo, new { id = "txtFichaTecnicaProdutoModelo", @class = "form-control" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="campos-ficha-tecnica">
+                                                <span>TIPO:</span>
+                                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Tipo, new { id = "txtFichaTecnicaProdutoTipo", @class = "form-control" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="campos-ficha-tecnica">
+                                                <span>NCM:</span>
+                                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Ncm, new { id = "txtFichaTecnicaProdutoNcm", @class = "form-control" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="campos-ficha-tecnica">
+                                                <span>DESCRIÇÃO:</span>
+                                                @Html.TextBoxFor(m => m.Produto.FichaTecnica.Descricao, new { id = "txtFichaTecnicaProdutoDescricao", @class = "form-control" })
+                                            </td>
+                                        </tr>
+                                        <tr class="tr-sem-borda">
+                                            <td colspan="2" class="td-sem-borda">
+                                                <h4>DETALHAMENTO DA PEÇA</h4>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="text-center">
+                                                    <img id="imgProdutoDetalharFichaTecnica" src="~/Content/imagens/logoVestiry.png" class="float-left img-rounded img-ficha-tecnica-pedido" alt="..." />
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2" id="tdFichaTecnicaMateriasPrimasProduto">
+                                                TECIDO: FELPADO EM POLIESTER E ALGODÃO
+                                                <br />
+                                                LINHA 1: 120
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2" class="fonte-rodape-ficha-tecnica">
+                                                <span>VESTIRY UNIFORMES PROFISSIONAIS (16) 3319-6651</span>
+                                                <br />
+                                                <span>VESTIRY.COM.BR</span>
+                                                <br />
+                                                <span>facebook.com/vestiry</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Imprimir" id="btnImprimirFichaTecnica" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/Scripts/Pedido/index.js"></script>
+
+<script>
+    var mensagem = {
+        MSG32: '@Html.Raw(Mensagens.MSG_32)',
+        MSG33: '@Html.Raw(Mensagens.MSG_33)',
+        MSG34: '@Html.Raw(Mensagens.MSG_34)',
+        MSG34: '@Html.Raw(Mensagens.MSG_34)'
+    }
+
+    var enumTipoFase = {
+        ORCAMENTO: @Convert.ToInt32(EnumTipoFase.ORCAMENTO),
+        CORTE:@Convert.ToInt32(EnumTipoFase.CORTE),
+        FINALIZADO: @Convert.ToInt32(@EnumTipoFase.FINALIZADO)
+    }
+
+    var enumTipoFuncao = {
+        ADMINISTRATIVO: @Convert.ToInt32(EnumTipoFuncao.ADMINISTRATIVO)
+    }
+
+    var codigoFuncao = @funcao.Codigo;
+
+</script>
+

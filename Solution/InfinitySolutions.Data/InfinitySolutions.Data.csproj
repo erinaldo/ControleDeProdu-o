@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InfinitySolutions.Data</RootNamespace>
+    <AssemblyName>InfinitySolutions.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mysql.data, Version=6.3.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Sistema Sal da Terra\Solution\InfinitySolutions.Data\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\DataAcessoSistema.cs" />
+    <Compile Include="Base\DataBase.cs" />
+    <Compile Include="Base\DataLogin.cs" />
+    <Compile Include="DataCliente.cs" />
+    <Compile Include="Producao\DataFuncionario.cs" />
+    <Compile Include="Producao\DataLinhaProducao.cs" />
+    <Compile Include="Producao\DataTerceirizado.cs" />
+    <Compile Include="Dominios\DataTipoFuncaoFuncionario.cs" />
+    <Compile Include="Dominios\DataTipoFuncaoTerceirizado.cs" />
+    <Compile Include="Dominios\DataTipoContaPagar.cs" />
+    <Compile Include="Dominios\DataTipoFormaPagamentoContaPagar.cs" />
+    <Compile Include="Dominios\DataTipoFormaPagamentoContaReceber.cs" />
+    <Compile Include="Dominios\DataTipoFormaPagamentoParcela.cs" />
+    <Compile Include="Dominios\DataTipoStatusContaPagar.cs" />
+    <Compile Include="Dominios\DataTipoStatusParcela.cs" />
+    <Compile Include="Financeiro\DataContaPagar.cs" />
+    <Compile Include="Financeiro\DataContaReceber.cs" />
+    <Compile Include="DataEndereco.cs" />
+    <Compile Include="Financeiro\DataFornecedor.cs" />
+    <Compile Include="Financeiro\DataPagamento.cs" />
+    <Compile Include="Financeiro\DataParcela.cs" />
+    <Compile Include="Producao\DataFichaTecnica.cs" />
+    <Compile Include="Producao\DataFrete.cs" />
+    <Compile Include="Producao\DataMateriaPrima.cs" />
+    <Compile Include="Producao\DataNotaFiscal.cs" />
+    <Compile Include="Producao\DataPedido.cs" />
+    <Compile Include="Producao\DataProduto.cs" />
+    <Compile Include="Producao\DataTabelaPreco.cs" />
+    <Compile Include="Dominios\DataTipoFrete.cs" />
+    <Compile Include="Dominios\DataTipoFuncao.cs" />
+    <Compile Include="Dominios\DataTipoPermissao.cs" />
+    <Compile Include="Dominios\DataTipoFormaPagamento.cs" />
+    <Compile Include="Dominios\DataTipoCor.cs" />
+    <Compile Include="Dominios\DataTipoFase.cs" />
+    <Compile Include="Dominios\DataTipoTamanho.cs" />
+    <Compile Include="Dominios\DataTipoUnidadeMedida.cs" />
+    <Compile Include="Dominios\DataTipoStatusLinhaProducao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InfinitySolutions.Commom\InfinitySolutions.Commom.csproj">
+      <Project>{AB72999A-487D-4391-90F0-7A4446B07959}</Project>
+      <Name>InfinitySolutions.Commom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InfinitySolutions.Entity\InfinitySolutions.Entity.csproj">
+      <Project>{AE1BF525-0B57-4D53-8E35-257C247FDBDC}</Project>
+      <Name>InfinitySolutions.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,169 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.PedidoModel
+@{
+    ViewBag.Title = "IMPRESSÃO PEDIDO";
+    ViewBag.Imagem = "~/Content/imagens/Pedido.png";
+
+    var desconto = Model.Pedido.Desconto ?? 0;
+    var total = Model.Pedido.Valor - desconto;
+    var count = 0;
+}
+
+<script>
+    $('.js-not-imprimir').hide();
+</script>
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="">
+            <table class="text-center tabela-impressao-cabecalho">
+                <tbody>
+                    <tr>
+                        <td rowspan="6" class="td-logo-ficha-tecnica">
+                            <img id="imgPedidoFichaTecnica" class="imagem-logo-ficha-tecnica" alt="logo" src="~/Content/imagens/logoVestiry.png" />
+                        </td>
+                        <td class="">
+                            <span>VESTIRY - V.G. DA SILVA CONFECCOES</span>
+                            <br />
+                            <br />
+                            <span>CNPJ: 18.631.516/0001-08  IE: 181.393.620.112</span>
+                            <br />
+                            <span>CEP:14807-279 - RUA JOÃO BOSCO ANTONIO DA SILVA FARIAS - Nº 2676</span>
+                            <br />
+                            <span>JARDIM ELIANA - ARARAQUARA - SP</span>
+                            <br />
+                            <span>E-MAIL: CONTATO@VESTIRY.COM.BR     FONE: (16) 3319-6651</span>
+                            <br />
+                            <span>WWW.VESTIRY.COM.BR</span>
+                        </td>
+                        <td class="td-impressao-descricao-numero-pedido">
+                            <span>ORÇAMENTO</span>
+                            <br />
+                            <span>Nº: @Model.Pedido.Codigo.ToString("0000000")</span>
+                        </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+
+            <table class="text-center tabela-impressao-descricao-cliente">
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="">
+                            <span>CLIENTE:</span> @Model.Pedido.Cliente.Apelido
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="">
+                            <span>CNPJ/IE:</span> @Model.Pedido.Cliente.Cnpj.Value.ToString(@"00\.000\.000\/0000\-00")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="">
+                            <span>CONTATOS:</span> @Model.Pedido.Cliente.Contato
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="">
+                            <span>ENDEREÇO:</span> @Model.Pedido.Cliente.Endereco.Rua
+                        </td>
+                        <td class="">
+                            <span>MUNICÍPIO: </span>@Model.Pedido.Cliente.Endereco.Cidade - @Model.Pedido.Cliente.Endereco.Uf
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br />
+            <br />
+
+            <table class="text-center tabela-impressao-descricao-produtos">
+                <thead>
+                    <tr>
+                        <th class="">
+                            <span>#</span>
+                        </th>
+                        <th class="">
+                            <span>PRODUTO</span>
+                        </th>
+                        <th class="">
+                            <span>TAMANHO</span>
+                        </th>
+                        <th class="">
+                            <span>COR</span>
+                        </th>
+                        <th class="">
+                            <span>QTDE</span>
+                        </th>
+                        <th class="">
+                            <span>UNITÁRIO</span>
+                        </th>
+                        <th class="">
+                            <span>TOTAL</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var produto in Model.Pedido.Produtos)
+                    {
+                        count++;
+                        var valorProduto = produto.ValorUnitario.HasValue ? produto.ValorUnitario.Value : produto.Valor;
+                        var totalProduto = (produto.Quantidade.Value * valorProduto);
+                        var classeCor = count % 2 != 0 ? "linha-impar" : "";
+
+                        <tr class="@classeCor">
+                            <td class="">
+                                <span>@produto.Codigo</span>
+                            </td>
+                            <td class="">
+                                <span>@produto.Descricao</span>
+                            </td>
+                            <td class="">
+                                <span>@produto.TipoTamanho.Descricao</span>
+                            </td>
+                            <td class="">
+                                <span>@produto.TipoCor.Descricao</span>
+                            </td>
+                            <td class="">
+                                <span>@produto.Quantidade</span>
+                            </td>
+                            <td class="">
+                                <span>@valorProduto.ToString("C")</span>
+                            </td>
+                            <td class="">
+                                <span>@totalProduto.ToString("C")</span>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <span>@Model.Pedido.Produtos.Sum(p => p.Quantidade) PEÇAS</span>
+                        </td>
+                        <td colspan="2">
+                            <span>PRODUTOS @Model.Pedido.Valor.ToString("C")</span>
+                        </td>
+                        <td>
+                            <span>DESCONTO @desconto.ToString("C")</span>
+                        </td>
+                        <td colspan="2">
+                            <span>TOTAL @total.ToString("C") </span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </div>
+</div>
+<br />
+<footer class="rodape-impressao">
+    <i>EMITIDO EM @DateTime.Now</i>
+</footer>

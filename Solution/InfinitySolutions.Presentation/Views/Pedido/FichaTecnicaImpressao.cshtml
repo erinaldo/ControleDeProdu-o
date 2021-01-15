@@ -1,0 +1,96 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.FichaTecnicaModel
+@{
+    ViewBag.Title = "Ficha Técnica";
+    ViewBag.Imagem = "~/Content/imagens/FichaTecnica.png";
+}
+
+<script>
+    $('.js-not-imprimir').hide();
+</script>
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="ficha-tecnica">
+            <table class="ficha-tecnica-tabela ficha-tecnica-tabela-impressao text-center">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <h3 class="fonte-titulo-ficha-tecnica">FICHA TÉCNICA</h3>
+                            <input type="hidden" id="hdnCodigoFichaTecnica" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h4 id="h4FichaTecnicaNomeProduto">@Model.Produto.Descricao</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" class="td-logo-ficha-tecnica">
+                            <img id="imgPedidoFichaTecnica" class="imagem-logo-ficha-tecnica" alt="logo" src="~/Content/imagens/logoVestiry.png" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="campos-ficha-tecnica">
+                            <span>CÓDIGO: </span> @Model.Produto.NumeroProdutoCliente
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="campos-ficha-tecnica">
+                            <span>MODELO:</span> @Model.Produto.FichaTecnica.Modelo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="campos-ficha-tecnica">
+                            <span>TIPO:</span> @Model.Produto.FichaTecnica.Tipo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="campos-ficha-tecnica">
+                            <span>NCM:</span> @Model.Produto.FichaTecnica.Ncm
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="campos-ficha-tecnica">
+                            <span>DESCRIÇÃO:</span>@Model.Produto.FichaTecnica.Descricao
+                        </td>
+                    </tr>
+                    <tr class="tr-sem-borda">
+                        <td colspan="2" class="td-sem-borda">
+                            <h4>DETALHAMENTO DA PEÇA</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="text-center">
+                                <img id="imgProdutoDetalharFichaTecnica" src="data:image/png;base64, @Model.Produto.FichaTecnica.Foto64" class="float-left img-rounded img-ficha-tecnica-pedido" alt="..." />
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" id="tdFichaTecnicaMateriasPrimasProduto">
+
+                            @foreach (var materiaPrima in Model.Produto.MateriasPrimas)
+                            {
+                                @materiaPrima.Descricao.ToUpper()
+                                <br />
+                            }
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="fonte-rodape-ficha-tecnica">
+                            <span>VESTIRY UNIFORMES PROFISSIONAIS (16) 3319-6651</span>
+                            <br />
+                            <span>VESTIRY.COM.BR</span>
+                            <br />
+                            <span>facebook.com/vestiry</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

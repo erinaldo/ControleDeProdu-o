@@ -1,0 +1,106 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.TerceirizadoModel
+@{
+    ViewBag.Title = "Terceirizados";
+    ViewBag.Imagem = "~/Content/imagens/Terceirizado.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+
+        @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ADICIONAR))
+        {
+            <a data-toggle="modal" data-target="#modalIncluirTerceirizado">
+                Adicionar Terceirizado
+            </a>
+        }
+
+        <div class="jumbotron">
+            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">NOME</th>
+                        <th scope="col">FUNÇÃO</th>
+                        <th scope="col">TELEFONE</th>
+                        <th scope="col">AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @if (Model.Retorno.Entity != null)
+                    {
+                        foreach (var terceirizado in (List<Terceirizado>)Model.Retorno.Entity)
+                        {
+                            var telefone = terceirizado.Telefone.HasValue && terceirizado.Telefone.Value > 0 ? terceirizado.Telefone.Value.ToString().Length > 10 ? terceirizado.Telefone.Value.ToString("(00) 00000-0000") : terceirizado.Telefone.Value.ToString("(00) 0000-0000") : String.Empty;
+
+                            <tr>
+                                <td scope="col">@terceirizado.Nome.ToUpper()</td>
+                                <td scope="col">@terceirizado.TipoFuncaoTerceirizado.Nome.ToUpper()</td>
+                                <td scope="col">@telefone</td>
+                                <td scope="col">
+                                    <img id="@terceirizado.Codigo" src="~/Content/imagens/EditarMenor.png" alt="ALTERAR TERCEIRIZADO" title="ALTERAR TERCEIRIZADO" class="js-AlterarTerceirizado" />
+                                    <img id="@terceirizado.Codigo" src="~/Content/imagens/ExcluirMenor.png" alt="EXCLUIR TERCEIRIZADO" title="EXCLUIR TERCEIRIZADO" class="js-ExcluirTerceirizado" />
+                                </td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Salvar", "Terceirizado", FormMethod.Post, new { @class = "form-horizontal", id = "formIncluirTerceirizado" }))
+{
+
+    @Html.HiddenFor(model => model.Terceirizado.Codigo, new { id = "hdnTerceirizadoCodigo" })
+
+    <div class="modal fade" id="modalIncluirTerceirizado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">TERCEIRIZADO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Nome</label>
+                                @Html.TextBoxFor(m => m.Terceirizado.Nome, new { id = "txtTerceirizadoNome", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Função</label>
+                                @Html.DropDownListFor(m => m.Terceirizado.TipoFuncaoTerceirizado.Codigo, new SelectList(Model.Dominios.TiposFuncoesTerceirizado, "Codigo", "Nome"), "...", new { id = "ddlTerceirizadoTipoFuncaoTerceirizado", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Telefone</label>
+                                @Html.TextBoxFor(m => m.Terceirizado.Telefone, new { id = "txtTerceirizadoTelefone", @class = "form-control js-telefone" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarTerceirizado" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/Scripts/Terceirizado/index.js"></script>

@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfinitySolutions.Business", "InfinitySolutions.Business\InfinitySolutions.Business.csproj", "{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfinitySolutions.Data", "InfinitySolutions.Data\InfinitySolutions.Data.csproj", "{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfinitySolutions.Commom", "InfinitySolutions.Commom\InfinitySolutions.Commom.csproj", "{AB72999A-487D-4391-90F0-7A4446B07959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfinitySolutions.Entity", "InfinitySolutions.Entity\InfinitySolutions.Entity.csproj", "{AE1BF525-0B57-4D53-8E35-257C247FDBDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfinitySolutions.Presentation", "InfinitySolutions.Presentation\InfinitySolutions.Presentation.csproj", "{75ABF52C-0EDC-4047-9938-8FEF94A42435}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5D0AAFBC-7BED-4FF0-90FF-81239AE23E6D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5E9F268C-54CF-4235-BDE2-33D7D0A7F05C}.Release|x86.ActiveCfg = Release|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AB72999A-487D-4391-90F0-7A4446B07959}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AE1BF525-0B57-4D53-8E35-257C247FDBDC}.Release|x86.ActiveCfg = Release|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Debug|x86.Build.0 = Debug|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Release|x86.ActiveCfg = Release|Any CPU
+		{75ABF52C-0EDC-4047-9938-8FEF94A42435}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F393FE7B-386C-4B46-BC97-E9D0CD0EFC8E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://infinitysolutionssystens.visualstudio.com/
+		SccProjectUniqueName0 = InfinitySolutions.Business\\InfinitySolutions.Business.csproj
+		SccProjectName0 = InfinitySolutions.Business
+		SccLocalPath0 = InfinitySolutions.Business
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = InfinitySolutions.Data\\InfinitySolutions.Data.csproj
+		SccProjectName2 = InfinitySolutions.Data
+		SccLocalPath2 = InfinitySolutions.Data
+		SccProjectUniqueName3 = InfinitySolutions.Commom\\InfinitySolutions.Commom.csproj
+		SccProjectName3 = InfinitySolutions.Commom
+		SccLocalPath3 = InfinitySolutions.Commom
+		SccProjectUniqueName4 = InfinitySolutions.Entity\\InfinitySolutions.Entity.csproj
+		SccProjectName4 = InfinitySolutions.Entity
+		SccLocalPath4 = InfinitySolutions.Entity
+		SccProjectUniqueName5 = InfinitySolutions.Presentation\\InfinitySolutions.Presentation.csproj
+		SccProjectName5 = InfinitySolutions.Presentation
+		SccLocalPath5 = InfinitySolutions.Presentation
+	EndGlobalSection
+EndGlobal

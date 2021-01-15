@@ -1,0 +1,149 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.ClienteModel
+@{
+    ViewBag.Title = "Clientes";
+    ViewBag.Imagem = "~/Content/imagens/Cliente.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+
+        @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ADICIONAR))
+        {
+            <a data-toggle="modal" data-target="#modalIncluirCliente">
+                Adicionar Cliente
+            </a>
+        }
+
+        <div class="jumbotron">
+            <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">NOME</th>
+                        <th scope="col">ENDEREÇO</th>
+                        <th scope="col">CNPJ</th>
+                        <th scope="col">CONTATO</th>
+                        <th scope="col">AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @if (Model.Retorno.Entity != null)
+                    {
+                        foreach (var cliente in (List<Cliente>)Model.Retorno.Entity)
+                        {
+                            <tr>
+                                <td scope="col">@cliente.Apelido.ToUpper()</td>
+                                <td scope="col">@cliente.EnderecoCompleto</td>
+                                @if (cliente.Cnpj.HasValue && cliente.Cnpj > 0)
+                                {
+                                    <td scope="col">@cliente.Cnpj.Value.ToString(@"00\.000\.000\/0000\-00")</td>
+                                }
+                                else
+                                {
+                                    <td scope="col">-</td>
+                                }
+                                <td scope="col">@cliente.Contato</td>
+                                <td scope="col">
+                                    <img id="@cliente.Codigo" src="~/Content/imagens/EditarMenor.png" alt="ALTERAR CLIENTE" title="ALTERAR CLIENTE" class="js-AlterarCliente" />
+                                    <img id="@cliente.Codigo" src="~/Content/imagens/ExcluirMenor.png" alt="EXCLUIR CLIENTE" title="EXCLUIR CLIENTE" class="js-ExcluirCliente" />
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("Salvar", "Cliente", FormMethod.Post, new { @class = "form-horizontal", id = "formIncluirCliente" }))
+{
+
+    @Html.HiddenFor(model => model.Cliente.Codigo, new { id = "hdnClienteCodigo" })
+    @Html.HiddenFor(model => model.Cliente.Endereco.Codigo, new { id = "hdnClienteEnderecoCodigo" })
+
+    <div class="modal fade" id="modalIncluirCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CLIENTE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label"> </span>Cnpj</label>
+                                @Html.TextBoxFor(m => m.Cliente.Cnpj, new { id = "txtClienteCnpj", @class = "form-control js-cnpj" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label"> </span>Ie</label>
+                                @Html.TextBoxFor(m => m.Cliente.Ie, new { id = "txtClienteIe", @class = "form-control js-ie" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Nome</label>
+                                @Html.TextBoxFor(m => m.Cliente.Nome, new { id = "txtClienteNome", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Nome Fantasia</label>
+                                @Html.TextBoxFor(m => m.Cliente.NomeFantasia, new { id = "txtClienteNomeFantasia", @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron">
+                        <div class="form-group">
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label"> </span>Rua</label>
+                                @Html.TextBoxFor(m => m.Cliente.Endereco.Rua, new { id = "txtClienteEnderecoRua", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-xs-2">
+                                <label><span class="fonte-vermelha control-label"> </span>Número</label>
+                                @Html.TextBoxFor(m => m.Cliente.Endereco.Numero, new { id = "txtClienteEnderecoNumero", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-xs-2">
+                                <label><span class="fonte-vermelha control-label"> </span>Cep</label>
+                                @Html.TextBoxFor(m => m.Cliente.Endereco.Cep, new { id = "txtClienteEnderecoCep", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label"> </span>Bairro</label>
+                                @Html.TextBoxFor(m => m.Cliente.Endereco.Bairro, new { id = "txtClienteEnderecoBairro", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label"> </span>Cidade</label>
+                                @Html.TextBoxFor(m => m.Cliente.Endereco.Cidade, new { id = "txtClienteEnderecoCidade", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label"> </span>Uf</label>
+                                @Html.TextBoxFor(m => m.Cliente.Endereco.Uf, new { id = "txtClienteEnderecoUf", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label"> </span>Contato</label>
+                                @Html.TextBoxFor(m => m.Cliente.Contato, new { id = "txtClienteContato", @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarCliente" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/Scripts/Cliente/index.js"></script>

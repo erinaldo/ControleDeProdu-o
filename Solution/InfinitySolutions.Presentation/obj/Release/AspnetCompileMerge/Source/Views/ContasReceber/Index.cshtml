@@ -1,0 +1,159 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.ContasReceberModel
+@{
+    ViewBag.Title = "Contas Receber";
+    ViewBag.Imagem = "~/Content/imagens/ContasReceber.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+
+
+@using (Html.BeginForm("Salvar", "ContasReceber", FormMethod.Post, new { @class = "form-horizontal", id = "formContasReceber" }))
+{
+    <div class="row tabela-inicio">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+
+            @if (login.TiposPermissoes.Any(p => p.Codigo == (int)EnumTipoPermissao.ADICIONAR))
+            {
+                <a data-toggle="modal" data-target="#modalIncluirContaReceber">
+                    Adicionar Conta Receber
+                </a>
+            }
+            <div class="jumbotron">
+                <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                    <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-2 col-md-2 col-xs-2">
+                        <label><span class="fonte-vermelha control-label">* </span>Data Inicio</label>
+                        @Html.TextBoxFor(m => m.DataInicio, new { id = "txtContasReceberDataInicio", @class = "form-control js-obrigatorio js-data" })
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-2">
+                        <label><span class="fonte-vermelha control-label">* </span>Data Fim</label>
+                        @Html.TextBoxFor(m => m.DataFim, new { id = "txtContasReceberDataFim", @class = "form-control js-obrigatorio js-data" })
+                    </div>
+
+                    <div class="col-lg-1 col-md-1 col-xs-1">
+                        @*<label class="label-blank">&nbsp;</label>*@
+                        <button id="btnContasReceberPesquisar" type="button" class="btn btn-info">
+                            Pesquisar
+                        </button>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2 col-xs-2">
+                        <label></label>
+                        <label> </label>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-2 valorTotalReceber">
+                        <label>Total:</label>
+                        <label id="lblContasReceberTotal">@Model.Total.ToString("C")</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumbotron">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">CLIENTE</th>
+                            <th scope="col">DATA VENCIMENTO</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">VALOR</th>
+                            <th scope="col">AÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @if (Model.Retorno.Entity != null)
+                        {
+                            foreach (var contaReceber in (List<ContaReceber>)Model.Retorno.Entity)
+                            {
+                                <tr>
+                                    <td scope="col">@contaReceber.Cliente.Nome.ToUpper()</td>
+                                    <td scope="col">@contaReceber.DataVencimento.Value.ToShortDateString()</td>
+                                    <td scope="col">@contaReceber.Status.RecuperaDescricaoEnum()</td>
+                                    <td scope="col">@contaReceber.Valor.Value.ToString("C")</td>
+                                    <td scope="col">
+                                        <img id="@contaReceber.Codigo" src="~/Content/imagens/EditarMenor.png" alt="ALTERAR CONTA RECEBER" title="ALTERAR CONTA RECEBER" class="js-AlterarContaReceber" />
+                                        <img id="@contaReceber.Codigo" src="~/Content/imagens/ExcluirMenor.png" alt="EXCLUIR CONTA RECEBER" title="EXCLUIR CONTA RECEBER" class="js-ExcluirContaReceber" />
+                                        <img id="@contaReceber.Codigo" src="~/Content/imagens/DAR BAIXA.png" alt="DAR BAIXA PAGAMENTO" tilte="DAR BAIXA PAGAMENTO" class="js-DarBaixaPagamentoContaReceber" />
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    @Html.HiddenFor(model => model.ContaReceber.Codigo, new { id = "hdnContaReceberCodigo" })
+
+    <div class="modal fade" id="modalIncluirContaReceber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CONTA RECEBER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="jumbotron">
+                        <div id="divMensagem" class="alert @ClasseMensagem @ClasseVisivel js-mensagem" role="alert">
+                            <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Cliente (Pagador)</label>
+                                @Html.DropDownListFor(m => m.ContaReceber.Cliente.Codigo, new SelectList(Model.Dominios.Clientes, "Codigo", "Apelido"), "...", new { id = "ddlContaReceberCliente", @class = "form-control js-obrigatorio" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Data Emissão</label>
+                                @Html.TextBoxFor(m => m.ContaReceber.DataEmissao, new { id = "txtContaReceberDataEmissao", @class = "form-control js-obrigatorio js-data" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Data Vencimento</label>
+                                @Html.TextBoxFor(m => m.ContaReceber.DataVencimento, new { id = "txtContaReceberDataVencimento", @class = "form-control js-obrigatorio js-data" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Pedido</label>
+                                @Html.DropDownListFor(m => m.ContaReceber.Pedido.Codigo, new SelectList(Model.Dominios.Pedidos, "Codigo", "DescricaoCodigo"), "...", new { id = "ddlContaReceberPedido", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Valor</label>
+                                @Html.TextBoxFor(m => m.ContaReceber.Valor, new { id = "txtContaReceberValor", @class = "form-control js-obrigatorio js-monetaria" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Nota Fiscal (Nfe)</label>
+                                @Html.TextBoxFor(m => m.ContaReceber.NotaFiscal, new { id = "txtContaReceberNotaFiscal", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Pedido Externo</label>
+                                @Html.TextBoxFor(m => m.ContaReceber.PedidoExterno, new { id = "txtContaReceberPedidoExterno", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label>Nota Fiscal Externa</label>
+                                @Html.TextBoxFor(m => m.ContaReceber.NotaFiscalExterna, new { id = "txtContaReceberNotaFiscalExterna", @class = "form-control" })
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-4">
+                                <label><span class="fonte-vermelha control-label">* </span>Forma Pagamento</label>
+                                @Html.DropDownListFor(m => m.ContaReceber.TipoFormaPagamentoContaReceber.Codigo, new SelectList(Model.Dominios.TiposFormasPagamentoContaReceber, "Codigo", "Descricao"), "...", new { id = "ddlContaReceberFormaPagamentoContaReceber", @class = "form-control js-obrigatorio" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <input type="submit" class="btn btn-primary" value="Salvar" id="btnSalvarContaReceber" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/Scripts/ContasReceber/index.js"></script>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="caiovieira-001-site1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\TFS\\INFINITY\ SOLUTIONS\\Alex\\Solution\\InfinitySolutions\.Presentation\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\TFS\\INFINITY\ SOLUTIONS\\Alex\\Solution\\InfinitySolutions\.Presentation\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="DefaultConnection_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\TFS\\INFINITY\ SOLUTIONS\\Alex\\Solution\\InfinitySolutions\.Presentation\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="MySQLConnectionString-Web.config Connection String" description="MySQLConnectionString Connection String used in web.config by the application to access the database." value="Server=localhost;Database=db_controle_jogos;Uid=pMofNgFuDZ0=;Pwd=2vYf9nNUdwA=;Connect Timeout=30" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\TFS\\INFINITY\ SOLUTIONS\\Alex\\Solution\\InfinitySolutions\.Presentation\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySQLConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

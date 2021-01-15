@@ -1,0 +1,65 @@
+﻿@using InfinitySolutions.Entity
+@using InfinitySolutions.Commom
+@model InfinitySolutions.Presentation.Models.NotasFiscaisModel
+@{
+    ViewBag.Title = "Nota Fiscal";
+    ViewBag.Imagem = "~/Content/imagens/NotaFiscal.png";
+
+    string ClasseMensagem = Model.Retorno.IsValido ? "alert-success" : "alert-danger";
+    string ClasseVisivel = !String.IsNullOrEmpty(@Model.Retorno.Mensagem) ? String.Empty : "invisivel";
+    var login = Session[Constantes.USUARIO_LOGADO] as Login;
+}
+
+<div class="row tabela-inicio">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="jumbotron">
+            @if (!String.IsNullOrEmpty(Model.Retorno.Mensagem))
+            {
+                <div id="divMensagemPrincipalMateriaPrima" class="alert @ClasseMensagem js-mensagem" role="alert">
+                    <label><span id="spanMensagem" class="js-escrita-mensagem">@Model.Retorno.Mensagem</span></label>
+                </div>
+            }
+            <table id="tblNotasFiscais" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">PEDIDO</th>
+                        <th scope="col">NOTA</th>
+                        <th scope="col">VALOR</th>
+                        <th scope="col">PAGAMENTO</th>
+                        <th scope="col">OBSERVAÇÃO</th>
+                        <th scope="col">AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @if (Model.Retorno.Entity != null)
+                    {
+                        foreach (var notaFiscal in (List<NotaFiscal>)Model.Retorno.Entity)
+                        {
+                            <tr>
+                                <td scope="col">@notaFiscal.Pedido.Codigo.ToString("0000000")</td>
+                                <td scope="col">@notaFiscal.Numero.ConverteValor(0M).ToString(@"000\.000\.000")</td>
+                                <td scope="col">@notaFiscal.Valor.ToString("C")</td>
+                                <td scope="col">@notaFiscal.DataPagamento.ToString("dd/MM/yyyy")</td>
+                                <td scope="col"><textarea class="form-control js-NotaFiscalObservacao" cols="20" name="Pedido.Observacao" rows="2">@notaFiscal.Observacao</textarea></td>
+                                <td scope="col">
+
+                                    <a id="downloadDanfe" href='http://nfe.webmaniabr.com/danfe/@notaFiscal.CodigoNotaFiscal' target="_blank">
+                                        <img src="~/Content/imagens/IconeDanfe.png" class="">
+                                    </a>
+                                    <a id="downloadXml" href='http://nfe.webmaniabr.com/xmlnfe/@notaFiscal.CodigoNotaFiscal' target="_blank">
+                                        <img src="~/Content/imagens/IconeXml.png" class="">
+                                    </a>
+                                    <img id="@notaFiscal.Codigo" src="~/Content/imagens/DAR BAIXA.png" alt="CONFIRMAR OBSERVAÇÃO" title="CONFIRMAR OBSERVAÇÃO" class="js-ConfirmarObservacao" />
+                                </td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/NotasFiscais/index.js"></script>
